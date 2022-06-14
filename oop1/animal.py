@@ -17,6 +17,10 @@ class Animal:
         print(f"Breed: {self.breed}")
         print(f"Colour: {self.colour}")
         print(f"Age: {self.age}")
+    
+    def __del__(self):
+        print(f'Object was destroied')
+
 
 #create object
 if __name__ == "__main__":
