@@ -1,5 +1,8 @@
 class Student:
-    def __init__(self,id:str,name:str,major:str) -> None:
+    #major:str = "IT"
+    #major = "IT"
+    #major:"IT" error
+    def __init__(self,id:str,name:str,major:str = "IT") -> None:
         self.id = id
         self.name = name
         self.major = major
@@ -20,4 +23,5 @@ if __name__ == "__main__":
     John = Student('112','John','MKT')
     John.display_detail()
 
-
+    amy = Student("113","Amy")
+    amy.display_detail()
