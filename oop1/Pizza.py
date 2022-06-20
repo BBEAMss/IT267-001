@@ -1,4 +1,4 @@
-"""class Pizza:
+class Pizza:
     def __init__(self,ingredients) :
         self.ingredients = ingredients
     
@@ -25,18 +25,19 @@
         else:
             return 'Default Medium: 12 inches, 8 slices'
         
-    #create instance
-    my_pizza = Pizza('Cheese, Meat')
-    print(my_pizza)
-    print(my_pizza.margherita())
 
-    #static method
-    print('---- Satatic Method ----')
-    print(Pizza.size('L'))
+    # create instance
+my_pizza = Pizza('Cheese, Meat')
+print(my_pizza)
+print(my_pizza.margherita())
 
-    #class method
-    print('---- Class Method ----')
-    print(Pizza.margherita())
-    print(Pizza.prosciutto())
-    print(my_pizza.margherita())
-    print(Pizza.ingredients)"""
+    # static method
+print('---- Static Method ----')
+print(Pizza.size('L'))
+
+    # class method
+print('---- Class Method ----')
+print(Pizza.margherita())
+print(Pizza.prosciutto())
+print(my_pizza.margherita())
+print(Pizza.ingredients) # cannot access instance variable
