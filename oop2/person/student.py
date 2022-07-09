@@ -1,5 +1,4 @@
 from person import Preson
-
 class Student(Preson):
     def __init__(self,name,faculty,major,year) -> None:
         super().__init__(name)
