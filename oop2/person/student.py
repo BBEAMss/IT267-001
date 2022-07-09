@@ -7,7 +7,9 @@ class Student(Preson):
         self.year = year   
         
     def welcome(self):
-        print(f'welcome to {self.faculty} major{self.major} in {self.year}')
+        super().welcome()
+        print(f'Welcome to {self.faculty} major {self.major} in {self.year}')
+        
     
 
    
