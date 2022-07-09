@@ -1,4 +1,3 @@
-from ntpath import join
 from student import Student
 
 #creat student object
